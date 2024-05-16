@@ -1,0 +1,156 @@
+{
+    "name": "Where did they go!?",
+    "description": "Have an out of body experience and amaze your viewers by turning yourself into a rabbit! Just try not to kill someone with your *style*.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "max": 300,
+        "min": 0,
+        "start_value": 300,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:resource",
+                "comparison": "<",
+                "resource": "*:*_resource",
+                "compare_to": 300
+            }
+        }
+    },
+    "timer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_resource",
+                "change": -1
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_resource",
+                "change": 1
+            }
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "key": "key.origins.primary_active",
+        "active_by_default": false
+    },
+    "onpress": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:execute_command",
+                "command": "function abaan404:trickster/disappear_end"
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "function abaan404:trickster/disappear_begin"
+            }
+        },
+        "cooldown": 1
+    },
+    "invisibility": {
+        "type": "origins:invisibility",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "invulnerability": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                { "type": "origins:name", "name": "inWall" },
+                { "type": "origins:name", "name": "fall" },
+                { "type": "origins:name", "name": "fireworks" }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "phase": {
+        "type": "origins:phasing",
+        "blacklist": true,
+        "render_type": "blindness",
+        "view_distance": 20,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:unphasable"
+        },
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        { "type": "origins:swimming" },
+                        { "type": "origins:sneaking" }
+                    ]
+                }
+            ]
+        }
+    },
+    "nuhuh": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:toggle",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function abaan404:trickster/disappear_end"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:resource",
+                    "comparison": "==",
+                    "resource": "*:*_resource",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "respawn": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:execute_command",
+            "command": "kill @e[type=minecraft:rabbit,sort=nearest,tag=Trickster,limit=1]"
+        }
+    }
+}

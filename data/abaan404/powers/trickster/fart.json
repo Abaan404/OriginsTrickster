@@ -1,0 +1,27 @@
+{
+    "name": "Flatulence.",
+    "description": "You may produce additional thrust at the expense of revealing yourself at unfortunate moments.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:chance",
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound abaan404:fart master @s ~ ~ ~ 0.1"
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "y": 0.75,
+                    "space": "local"
+                }
+            ]
+        },
+        "chance": 0.05
+    },
+    "cooldown": 20,
+    "key": {
+        "key": "key.sneak"
+    }
+}

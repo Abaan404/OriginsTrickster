@@ -1,0 +1,15 @@
+{
+    "name": "The Trickster",
+    "description": "We do a miniscule amount of trolling. A pinch of tomfoolery. A grain of trickery. A teency weency amount of Jestery. A microscopic quantity of sillyness. A minimum amount of fooling around. A teensy quantity of chicanery. A wee bit of buffoonery. A slight, miniature amount of scheming. Occasional rough and tumble. A smidgeon of immature deception. A tiny little silly willy.  A plank length of delinquency. A sample of runnery. A sliver of mischief. A modest sum of antics. A tiny fraction of messing around. A modicum of funny business. A tad bit of dubious deeds.",
+    "powers": [
+        "abaan404:trickster/swap",
+        "abaan404:trickster/yoink",
+        "abaan404:trickster/cringe",
+        "abaan404:trickster/fart",
+        "abaan404:trickster/ouchie",
+        "abaan404:trickster/disappear",
+        "abaan404:trickster/annoyance"
+    ],
+    "icon": "minecraft:tnt",
+    "impact": 2
+}

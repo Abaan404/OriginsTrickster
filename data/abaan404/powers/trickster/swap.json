@@ -1,0 +1,40 @@
+{
+    "name": "Mind My Business",
+    "description": "Dislocate yourself with someone! Just dont think about what happens to your former self :D",
+    "type": "origins:active_self",
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 3,
+        "should_render": true
+    },
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 20,
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tag @s add Swapped"
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function abaan404:trickster/swap"
+                    }
+                }
+            ]
+        },
+        "command_along_ray": "particle minecraft:dust 1 1 1 2 ~ ~ ~ 0 0 0 1 2 normal",
+        "command_step": 1,
+        "command_along_ray_only_on_hit": true
+    },
+    "cooldown": 20,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

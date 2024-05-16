@@ -1,0 +1,14 @@
+{
+    "name": "Cringe",
+    "description": "Every second you have a chance of being struck by thunder for being too cringe.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:chance",
+        "action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:lightning_bolt ~ ~ ~"
+        },
+        "chance": 0.0001
+    },
+    "interval": 20
+}
