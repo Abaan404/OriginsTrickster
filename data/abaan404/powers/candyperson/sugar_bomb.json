@@ -1,0 +1,41 @@
+{
+    "name": "Sugar Bomb",
+    "description": "Summon a puff of cotton candy and flee the scene",
+    "type": "origins:active_self",
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 0,
+        "should_render": true
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "function abaan404:candyperson/sugarbomb_start"
+            },
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "offhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            }
+        ]
+    },
+    "cooldown": 120,
+    "key": {
+        "key": "key.use"
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:cake"
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Candy-Person",
+    "description": "A sugar-like entity that has a serious problem with sweet food!",
+    "powers": [
+        "abaan404:candyperson/cake_master",
+        "abaan404:candyperson/cookie_master",
+        "abaan404:candyperson/honey_grip",
+        "abaan404:candyperson/favorite_food",
+        "abaan404:candyperson/hard_sugar",
+        "abaan404:candyperson/sugar_addict",
+        "abaan404:candyperson/sugar_expert",
+        "abaan404:candyperson/sugar_bomb",
+        "abaan404:candyperson/sugar_kit",
+        "abaan404:candyperson/sugar_recipe",
+        "abaan404:candyperson/sugar_stomach"
+    ],
+    "icon": "minecraft:sugar",
+    "impact": 2
+}

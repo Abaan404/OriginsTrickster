@@ -1,0 +1,9 @@
+{
+    "name": "Sugar Expert",
+    "description": "You don't take damage from sweet berry bushes.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "sweetBerryBush"
+    }
+}

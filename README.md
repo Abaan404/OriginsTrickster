@@ -1,6 +1,8 @@
-# Minecraft Origins: Trickster
+# Abaan's Custom Origins
 
-A minecraft origin made for the Spooncraft Spoonpack Modpack (and for myself). We do a miniscule amount of trolling. A pinch of tomfoolery. A grain of trickery. A teency weency amount of Jestery. A microscopic quantity of sillyness. A minimum amount of fooling around. A teensy quantity of chicanery. A wee bit of buffoonery. A slight, miniature amount of scheming. Occasional rough and tumble. A smidgeon of immature deception. A tiny little silly willy. A plank length of delinquency. A sample of runnery. A sliver of mischief. A modest sum of antics. A tiny fraction of messing around. A modicum of funny business. A tad bit of dubious deeds.
+# Trickster
+
+We do a miniscule amount of trolling. A pinch of tomfoolery. A grain of trickery. A teency weency amount of Jestery. A microscopic quantity of sillyness. A minimum amount of fooling around. A teensy quantity of chicanery. A wee bit of buffoonery. A slight, miniature amount of scheming. Occasional rough and tumble. A smidgeon of immature deception. A tiny little silly willy. A plank length of delinquency. A sample of runnery. A sliver of mischief. A modest sum of antics. A tiny fraction of messing around. A modicum of funny business. A tad bit of dubious deeds.
 
 | Name                | Power                                   | Description                                                                                                                                                          |
 | ------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -11,6 +13,17 @@ A minecraft origin made for the Spooncraft Spoonpack Modpack (and for myself). W
 | Ouchie!             | `abaan404:trickster/ouchie.json`        | You embarked into the end to bring joy to the Ancient Builders, Alas they didn't find amusement in your tricks. Any damage taken will randomly teleport you forever. |
 | Mind My Business    | `abaan404:trickster/swap.json`          | Dislocate yourself with someone! Just dont think about what happens to your former self :D                                                                           |
 | Yoink!              | `abaan404:trickster/yoink.json`         | Hippity Hoppity your item is my property.                                                                                                                            |
+
+# Candyperson
+
+THIS IS A FORK OF THE ORIGINAL ORIGIN MADE BY @Nugget#2961. See below for the additional powers added.
+
+[Original](https://github.com/QuantumXenon/origins-plus-plus/wiki/Candyperson)
+
+| Name       | Power                                     | Description                                       |
+| ---------- | ----------------------------------------- | ------------------------------------------------- |
+| Sugar Bomb | `candyperson:candyperson/sugar_bomb.json` | Summon a puff of cotton candy and flee the scene. |
+| Honey Grip | `candyperson:candyperson/honey_grip.json` | Climb Walls with your sugary limbs.               |
 
 ## Credits
 

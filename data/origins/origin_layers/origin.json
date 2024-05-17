@@ -1,6 +1,7 @@
 {
     "allow_random": true,
     "origins": [
-        "abaan404:trickster"
+        "abaan404:trickster",
+        "abaan404:candyperson"
     ]
 }

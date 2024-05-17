@@ -1,0 +1,18 @@
+{
+    "name": "Sugar Recipe",
+    "description": "Craft 9 sugar with 9 sweet berries in a crafting table",
+    "type": "origins:recipe",
+    "recipe": {
+        "id": "abaan404:sugar",
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": { "item": "minecraft:sweet_berries" }
+        },
+        "result": { "item": "minecraft:sugar", "count": 9 }
+    }
+}

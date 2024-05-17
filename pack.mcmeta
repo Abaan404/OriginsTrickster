@@ -1,13 +1,14 @@
 {
     "pack": {
-        "name": "Origins: Trickster",
+        "name": "Abaan's Origins",
         "id": "abaan404",
         "pack_format": 18,
         "version": "1.0.0",
         "authors": [
-            "Erawr_403"
+            "Erawr_403",
+            "Nugget_2961"
         ],
-        "description": "Mild Tomfoolery."
+        "description": "A collection of origins by abaan (and some forks)."
     }
 }
 

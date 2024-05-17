@@ -1,0 +1,23 @@
+{
+    "name": "Honey Grip",
+    "description": "Climb Walls with your sugary limbs",
+    "type": "origins:climbing",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:collided_horizontally"
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:honeycomb"
+                    }
+                }
+            }
+        ]
+    }
+}
