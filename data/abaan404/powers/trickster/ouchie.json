@@ -1,10 +1,14 @@
 {
     "name": "Ouchie!",
-    "description": "You embarked into the end to bring joy to the Ancient Builders, Alas they didn't find amusement in your tricks. Any damage taken will randomly teleport you forever.",
+    "description": "You embarked into the end to bring joy to the Ancient Builders, Alas they didn't find amusement in your tricks. Any damage taken will have a chance to randomly teleport you.",
     "type": "origins:self_action_when_hit",
     "entity_action": {
-        "type": "origins:execute_command",
-        "command": "function abaan404:trickster/ouchie"
+        "type": "origins:chance",
+        "action": {
+            "type": "origins:execute_command",
+            "command": "function abaan404:trickster/ouchie"
+        },
+        "chance": 0.1
     },
     "damage_condition": {
         "type": "origins:name",
